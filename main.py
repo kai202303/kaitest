@@ -9,7 +9,7 @@ import altair
 
 
 st.title('飲食店データ webあぷり')
-st.caption('Powered by')
+st.caption('Powered by k')
 st.subheader('使い方 ガイド')
 st.text('外食産業のデータの利活用を目的とした、WEBアプリ開発の試作品')
 image = Image.open('GPT.png')
