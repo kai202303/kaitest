@@ -6,7 +6,7 @@ from PIL import Image
 import datetime
 import altair
 
-df = pd.read_excel('tabe.xlsx')
+
 
 st.title('飲食店データ webあぷり')
 st.caption('Powered by')
@@ -15,6 +15,8 @@ st.text('外食産業のデータの利活用を目的とした、WEBアプリ�
 image = Image.open('GPT.png')
 st.sidebar.image(image,width=300)
 
+df = pd.read_csv('tabe.csv', encoding='cp932')
+df = df.drop(['Tid','url','元値','集計用','食べログ業種_大','食べログ業種_中','食べログ業種_小','ジャンル'], axis=1)
 st.dataframe(df)
 
 with st.sidebar.form(key='profile_from'):
