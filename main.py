@@ -17,7 +17,7 @@ st.sidebar.image(image,width=300)
 
 df = pd.read_csv('tabe.csv', encoding='cp932')
 df = df.drop(['Tid','url','元値','集計用','食べログ業種_大','食べログ業種_中','食べログ業種_小','ジャンル'], axis=1)
-eria = st.sidebar.text_input('駅指定（部分一致）')
+eria = st.text_input('駅指定（部分一致）')
 df= df[df['起点'].str.contains(eria)]#部分一致
 st.dataframe(df)
 
