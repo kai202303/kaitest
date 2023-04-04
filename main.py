@@ -30,9 +30,7 @@ with st.sidebar.form(key='profile_from'):
             '部署名（任意項目）*',
             ('本社営業部','大阪支店','名古屋支店','横浜支店','TCPリーシング課'))     
     name = st.text_input('氏名 *')
-    Department = st.selectbox(
-        '部署名(任意項目)',
-        ('本社','支店'))
+
     access = st.radio(
         'アクセス先 *',
         ('会社','在宅'))
@@ -47,8 +45,8 @@ with st.sidebar.form(key='profile_from'):
     # ボタン
     submit_btn = st.form_submit_button('送信')
     cancel_btn = st.form_submit_button('キャンセル') 
-    if submit_btn:
-        st.text(f'{name}さん、いらっしゃいませ！')
+if submit_btn:
+    st.text(f'{name}さん、いらっしゃいませ！')
     
 if submit_btn:
     df = pd.read_csv('tabe.csv', encoding='cp932')
