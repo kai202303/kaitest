@@ -7,7 +7,7 @@ import datetime
 import altair
 
 st.set_page_config(
-    page_title="Slime Creator", 
+    page_title="neko_k", 
     layout="wide"
 )
 
