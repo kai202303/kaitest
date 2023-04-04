@@ -46,7 +46,7 @@ with st.sidebar.form(key='profile_from'):
     submit_btn = st.form_submit_button('送信')
     cancel_btn = st.form_submit_button('キャンセル') 
 if submit_btn:
-    st.text(f'{name}さん、いらっしゃいませ！')
+    st.subheader(f'{name}さん、いらっしゃいませ！')
     
 if submit_btn:
     df = pd.read_csv('tabe.csv', encoding='cp932')
