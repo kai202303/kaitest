@@ -40,6 +40,7 @@ with st.sidebar.form(key='profile_from'):
     Usage = st.multiselect(
             '用途 (複数選択可) *',
             ('営業資料','市場調査','データ分析','その他')
+    )
         
     #     resoiution = st.slider('chatGPT 解像度',0,100,50)
 
