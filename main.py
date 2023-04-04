@@ -42,7 +42,7 @@ with st.sidebar.form(key='profile_from'):
             ('営業資料','市場調査','データ分析','その他')
     )
         
-    #     resoiution = st.slider('chatGPT 解像度',0,100,50)
+    resoiution = st.slider('chatGPT 解像度',0,100,50)
 
     # ボタン
     submit_btn = st.form_submit_button('送信')
