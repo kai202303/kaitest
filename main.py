@@ -42,5 +42,9 @@ with st.sidebar.form(key='profile_from'):
         'アクセス先 *',
         ('会社','在宅'))
     resoiution = st.slider('chatGPT 解像度',0,100,50)
+        # ボタン
+    submit_btn = st.form_submit_button('送信')
+    cancel_btn = st.form_submit_button('キャンセル')
+    
 
 
