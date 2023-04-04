@@ -8,7 +8,6 @@ import altair
 
 st.set_page_config(
     page_title="Slime Creator", 
-    page_icon=image, 
     layout="wide"
 )
 
