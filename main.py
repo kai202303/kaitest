@@ -6,7 +6,11 @@ from PIL import Image
 import datetime
 import altair
 
-
+st.set_page_config(
+    page_title="Slime Creator", 
+    page_icon=image, 
+    layout="wide"
+)
 
 st.title('飲食店データ webあぷり')
 st.caption('Powered by k')
