@@ -50,8 +50,6 @@ with st.sidebar.form(key='profile_from'):
     cancel_btn = st.form_submit_button('キャンセル') 
 if submit_btn:
     st.subheader(f'{name}さん、いらっしゃいませ！')
-    
-if submit_btn:
     df = pd.read_csv('tabe.csv', encoding='cp932')
     df = df.drop(['Tid','url','元値','集計用','食べログ業種_大','食べログ業種_中','食べログ業種_小','ジャンル'], axis=1)
     eria = st.text_input('駅名を入力して絞り込めます（部分一致）')
